@@ -35,4 +35,4 @@ Built for high-assurance, safety-critical execution using a bifurcated code pipe
 ---
 **"We no longer see only what the enemy wants us to see. We see the shadows they cast."**
 
-© 2024-2025 Forgex4. All rights reserved.
+© 2026-2027 Forgex4. All rights reserved.
