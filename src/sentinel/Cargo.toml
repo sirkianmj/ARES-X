@@ -1,0 +1,10 @@
+[package]
+name = "sentinel"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Linking the Sentinel (Brain) to the Nexus (Memory) and Vacuum (Eyes)
+nexus = { path = "../nexus" }
+vacuum = { path = "../vacuum" }
+tokio = { version = "1.0", features = ["full"] }

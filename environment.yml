@@ -1,0 +1,16 @@
+name: ares_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - mamba
+  - rust
+  - cargo
+  - duckdb
+  - flatbuffers
+  - nodejs  # Required for some MapLibre/WASM tooling
+  - clang   # Required for Rust/C++ interop (DuckDB extensions)
+  - cmake
+  - pip:
+    - cryptography  # For the Sovereign Shield scripts

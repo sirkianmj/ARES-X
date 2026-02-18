@@ -1,0 +1,15 @@
+/target
+/src/*/target
+**/*.rs.bk
+Cargo.lock
+
+# Databases and OSINT Caches
+*.db
+*.db-journal
+*.wal
+data/
+
+# Environment
+.env
+.venv
+.conda/

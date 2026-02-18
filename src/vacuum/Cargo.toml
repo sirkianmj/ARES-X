@@ -1,0 +1,17 @@
+[package]
+name = "vacuum"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# The networking stack
+tokio = { version = "1.0", features = ["full"] }
+reqwest = { version = "0.11", default-features = false, features = ["json", "rustls-tls"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Link to our own Nexus engine
+nexus = { path = "../nexus" }
+
+# For the 'Shadow' logic (Kalman filtering later)
+chrono = "0.4"

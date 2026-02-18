@@ -1,0 +1,18 @@
+namespace Forgex4.ORBAT;
+
+enum AssetCategory : byte { Land, Sea, Air, Space }
+
+table AssetSpec {
+  id: string (primary_key);
+  name: string;
+  category: AssetCategory;
+  fuel_burn_rate: float; // Used for Logistics Curves math
+  radar_signature: float;
+  max_velocity: float;
+}
+
+table AssetLibrary {
+  assets: [AssetSpec];
+}
+
+root_type AssetLibrary;
